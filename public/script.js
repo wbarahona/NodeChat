@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	var socket 		= io.connect('http://107.170.79.107/'),
+	var socket 		= io.connect('http://107.170.79.107'),
 		$msg_form 	= $('#send-message'),
 		$chat 		= $('#chat'),
 		$msgBox		= $('#message'),
