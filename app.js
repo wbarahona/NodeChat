@@ -7,6 +7,7 @@ var express 	= require('express'),
 	users		= {}
 
 io.enable('browser client minification')
+io.set('transports', [ 'xhr-polling', 'jsonp-polling', 'htmlfile' ])
 app
   .set('port', 3000)
   .use(express.static(__dirname+'/public'))
