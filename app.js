@@ -1,7 +1,7 @@
 var express 	= require('express'),
 	app			= express(),
 	server		= require('http').createServer(app),
-	io			= require('socket.io').listen(server, {close timeout: 5}),
+	io			= require('socket.io').listen(server, {'close timeout': 5}),
 	mongoose 	= require('mongoose'),
 	ChatModel	= require('./libs/db').ChatModel,
 	users		= {}
